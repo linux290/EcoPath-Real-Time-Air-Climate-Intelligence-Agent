@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- ── Favicon ─────────────────────────────────────────────────────── -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#1a3a2a" />
+
+  <!-- ── Viewport ─────────────────────────────────────────────────────── -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Primary SEO Meta ─────────────────────────────────────────────── -->
+  <meta name="title" content="EcoPath | Real-Time Air & Climate Intelligence" />
+  <meta name="description"
+    content="EcoPath is an AI-powered agentic dashboard that gives you real-time AQI analysis, pollution source detection, and personalized health protocols for your city." />
+  <meta name="keywords"
+    content="air quality, AQI, climate intelligence, pollution, health advisory, real-time, AI agent, EcoPath" />
+  <meta name="author" content="EcoPath Intelligence" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ── Open Graph / LinkedIn / Facebook ─────────────────────────────── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ecopath.app/" />
+  <meta property="og:title" content="EcoPath | Real-Time Air & Climate Intelligence" />
+  <meta property="og:description"
+    content="Stop reading just a number. EcoPath tells you WHY your air is bad and exactly what to do about it — powered by Gemini AI and live web search." />
+  <meta property="og:image" content="/og-image.png" />
+
+  <!-- ── Twitter Card ──────────────────────────────────────────────────── -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://ecopath.app/" />
+  <meta property="twitter:title" content="EcoPath | Real-Time Air & Climate Intelligence" />
+  <meta property="twitter:description"
+    content="Stop reading just a number. EcoPath tells you WHY your air is bad and exactly what to do about it — powered by Gemini AI and live web search." />
+  <meta property="twitter:image" content="/og-image.png" />
+
+  <!-- ── Fonts ─────────────────────────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!--
+      - "Syne"        → Bold, geometric display font for headings (replaces generic Inter)
+      - "DM Sans"     → Clean, modern body font with great readability
+      - "DM Mono"     → Monospace for AQI values and data readouts
+    -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- ── Performance hints ─────────────────────────────────────────────── -->
+  <link rel="dns-prefetch" href="https://generativelanguage.googleapis.com" />
+
+  <!-- ── Global baseline styles (before React hydrates) ───────────────── -->
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --color-bg: #0d1f16;
+      --color-surface: rgba(255, 255, 255, 0.06);
+      --color-border: rgba(255, 255, 255, 0.10);
+      --color-green: #4ade80;
+      --color-slate: #94a3b8;
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --font-mono: 'DM Mono', monospace;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-bg);
+      color: #f1f5f9;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100dvh;
+    }
+
+    /* Prevent flash of unstyled content */
+    #root {
+      min-height: 100dvh;
+    }
+
+    /* Native scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--color-bg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #2d5a3d;
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-green);
+    }
+
+    /* Selection highlight */
+    ::selection {
+      background: rgba(74, 222, 128, 0.25);
+      color: #f1f5f9;
+    }
+  </style>
+
+  <title>EcoPath | Real-Time Climate Intelligence</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
